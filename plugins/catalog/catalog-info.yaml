@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: CatalogInfo
+metadata:
+  name: my-catalog
+spec:
+  title: My Catalog
+  description: A simple catalog for showcasing services and components
+  owner: Your Name
