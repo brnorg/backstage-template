@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: example-component
+  description: "This is an example component"
+  tags:
+    - tag1
+    - tag2
+spec:
+  type: "frontend"
+  lifecycle: production
+  owner: "Jane Doe"
+  providesApis:
+    - description: "GraphQL API"
+      openApiUrl: "https://example.com/graphql.json"

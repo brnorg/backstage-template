@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Service
+metadata:
+  name: example-service
+  description: "This is an example service"
+  tags:
+    - tag1
+    - tag2
+spec:
+  owner: "John Doe"
+  type: "backend"
+  lifecycle: experimental
+  providesApis:
+    - description: "REST API"
+      swaggerUrl: "https://example.com/swagger.json"
