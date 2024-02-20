@@ -6,3 +6,19 @@ spec:
   title: My Catalog
   description: A simple catalog for showcasing services and components
   owner: Your Name
+  plugins:
+    - name: catalog
+      frontend:
+        entryPoint: dist/index.js
+    - name: scaffolder
+      backend:
+        baseUrl: http://localhost:7000/scaffolder/v1
+        rules:
+          - allow: '*'
+            prefix: '/'
+  locations:
+    - type: url
+      target: https://github.com/orgs/brnorg/backstage-template/plugins/catalog/entities
+      rules:
+        - allow: '*'
+          include: ['*.yaml']
