@@ -5,10 +5,8 @@ on:
   workflow_dispatch:  
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: brnorg/actions-brnorg/.github/workflows/liberaoubarrapr.yml@main
+  contruindo:
+    uses: brnorg/actions-brnorg/.github/workflows/liberaoubarrapr.yml@main
 
 
 
