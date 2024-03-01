@@ -7,10 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: verifanco status
-        uses: brnorg/actions-brnorg/.github/workflows/liberaoubarrapr.yml@main
+      - uses: brnorg/actions-brnorg/.github/workflows/liberaoubarrapr.yml@main
 
 
 
